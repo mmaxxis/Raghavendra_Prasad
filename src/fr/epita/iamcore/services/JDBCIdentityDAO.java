@@ -17,7 +17,7 @@ public class JDBCIdentityDAO {
 	private Connection connection;
 	
 	public JDBCIdentityDAO() throws SQLException {
-		this.connection = DriverManager.getConnection("jdbc:derby://localhost:1527/IAMCORE;create=true","PRASAD","PRASAD");
+		this.connection = DriverManager.getConnection("jdbc:derby://localhost:1527/PrasadDB;create=true","user","usr");
 		System.out.println(connection.getSchema());
 	}
 	
